@@ -1,0 +1,31 @@
+{
+  "description": "Delta-SVD project page evidence",
+  "source_tables": [
+    "reports/tables/master_comparison_rebuttal_aggregated.csv",
+    "reports/tables/master_comparison_rebuttal_per_subject.csv"
+  ],
+  "bootstrap": {
+    "unit": "subject",
+    "pairs": 30,
+    "resamples": 20000,
+    "seed": 20261003,
+    "mean_delta": -0.0013165414333343507,
+    "ci95": [
+      -0.0026221819718678795,
+      -1.7391492923101408e-05
+    ]
+  },
+  "knee": {
+    "size_mib": 150.8819798787435,
+    "mean_dino": 0.6950117429097493,
+    "retention_percent": 98.25895814380401
+  },
+  "source_hashes": {
+    "reports/tables/master_comparison_rebuttal_aggregated.csv": "750ac2d9d0b744d4afa9ec95b08e295cee11c72e04510a6226a50cb899848ca2",
+    "reports/tables/master_comparison_rebuttal_per_subject.csv": "3e04954604d085ecaf012dc85babc2f4238496dc174ee62abb88dbcc0f672c73",
+    "reports/tables/sd3_mmdit_quality_rebuttal_per_subject.csv": "f5cc8754ca32665f5c45e8159ed72ae5d2538be959494be541bb784803ff517b"
+  },
+  "units": "SD-v1.5: MiB; SD3.5: decimal MB",
+  "threshold": "t is cumulative singular value (sum sigma), not squared energy",
+  "qualitative": "Selected matched prompt/index examples; dog 3, cat 1, teapot 3; cohort-mean artifact sizes."
+}
